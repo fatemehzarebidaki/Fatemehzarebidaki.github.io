@@ -149,3 +149,46 @@ footer {
   padding: 0.75rem 1rem;
   color: #777;
 }
+
+/* === Inline Gallery Component === */
+.inline-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.inline-gallery img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.inline-gallery img:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Fullscreen overlay for zoom */
+.inline-gallery-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.inline-gallery-overlay.visible {
+  display: flex;
+}
+
+.inline-gallery-overlay img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 10px;
+}
