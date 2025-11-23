@@ -2,126 +2,95 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Fatemeh Zare Bidaki | Portfolio</title>
+  <title>Fatemeh Zare Bidaki | Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
-    header {
-      padding: 2rem 10%;
-      background: #f5f5f5;
-    }
-    nav a {
-      margin-right: 1rem;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    main {
-      padding: 2rem 10%;
-      max-width: 900px;
-    }
-    section {
-      margin-bottom: 2rem;
-    }
-    h1, h2, h3 {
-      margin-bottom: 0.5rem;
-    }
-    .tagline {
-      color: #555;
-      font-size: 1rem;
-    }
-    footer {
-      padding: 1rem 10%;
-      background: #f5f5f5;
-      font-size: 0.9rem;
-      text-align: center;
-    }
-  </style>
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
+<div class="site-wrapper">
   <header>
-    <h1>Fatemeh Zare Bidaki</h1>
-    <p class="tagline">
-      PhD Candidate · Online Optimization · Humanitarian Logistics · EMS & Bayesian Models
-    </p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#research">Research</a>
-      <a href="#teaching">Teaching</a>
-      <a href="#publications">Publications</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="header-inner">
+      <div class="brand">
+        <!-- Optional profile photo -->
+        <!-- <img src="assets/img/profile.jpg" alt="Profile photo of Fatemeh Zare Bidaki" /> -->
+        <div>
+          <div class="brand-title">Fatemeh Zare Bidaki</div>
+          <div class="brand-subtitle">
+            PhD Candidate · Operations Management & Information Systems · Humanitarian & Healthcare Analytics
+          </div>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="research.html">Research</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="publications.html">Publications</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section id="about">
-      <h2>About</h2>
-      <p>
-        I am a PhD candidate in Operations Management & Information Systems at Koç University,
-        focusing on online optimization of ambulance dispatching in mass-casualty incidents with
-        Bayesian learning and dynamic decision-making models.
-      </p>
+    <section>
+      <h1>Welcome</h1>
+      <div class="highlight-box">
+        <p>
+          I am a PhD candidate in Operations Management &amp; Information Systems at
+          Koç University Graduate School of Business (Istanbul).
+          My research focuses on online optimization, Bayesian learning, and
+          decision support for Emergency Medical Services (EMS) and humanitarian logistics.
+        </p>
+        <p>
+          I develop mixed-integer optimization models, rolling-horizon heuristics, and
+          simulation-based approaches to improve ambulance dispatching and casualty
+          transportation decisions under uncertainty in mass-casualty incidents.
+        </p>
+      </div>
     </section>
 
-    <section id="research">
-      <h2>Research & Projects</h2>
-      <ul>
-        <li><strong>Online Optimization of Ambulance Dispatching</strong> – Rolling horizon, MILP, GRASP/VNS, Bayesian updates.</li>
-        <li><strong>EMS System Dynamics Modeling</strong> – Survival functions, Bayesian casualty estimation, RL integration.</li>
-        <li><strong>Humanitarian Logistics</strong> – Relief distribution, fairness metrics, online blocked-edge models.</li>
-      </ul>
-    </section>
+    <section class="split">
+      <div>
+        <h2>Research Highlights</h2>
+        <ul class="list-compact">
+          <li>Online optimization of ambulance dispatching with Bayesian updates.</li>
+          <li>Rolling-horizon MILP models with GRASP/VNS heuristics.</li>
+          <li>System dynamics and simulation for EMS performance evaluation.</li>
+          <li>Fairness and equity in humanitarian logistics and relief distribution.</li>
+        </ul>
 
-    <section id="teaching">
-      <h2>Teaching</h2>
-      <p>
-        Instructor and TA experience in Engineering Economy, Operations Management, and quantitative methods.
-      </p>
-      <ul>
-        <li><strong>Engineering Economy (QMBU301)</strong> – Instructor, Koç University.</li>
-        <li><strong>OPSM / MGIS courses</strong> – Teaching assistant, including case-based and data-driven exercises.</li>
-      </ul>
-    </section>
+        <p>
+          See more details on the <a href="research.html">Research</a> and
+          <a href="publications.html">Publications</a> pages.
+        </p>
+      </div>
 
-    <section id="publications">
-      <h2>Publications & Works in Progress</h2>
-      <ul>
-        <li>
-          “Online Optimization of Ambulance Dispatching in Mass Casualty Incidents with Bayesian Updates”
-          – in preparation for <em>European Journal of Operational Research</em>.
-        </li>
-        <li>
-          “Adaptive Bayesian Estimation of Earthquake Casualties Under Spatiotemporal Dynamics”
-          – accepted for <em>IEEE IEEM Proceedings</em>.
-        </li>
-        <li>
-          “Hybrid Optimization and Simulation for Emergency Medical Services”
-          – targeted for <em>Journal of Simulation</em>.
-        </li>
-      </ul>
-    </section>
+      <div>
+        <h2>Teaching & Mentoring</h2>
+        <p>
+          I enjoy designing interactive, practice-oriented learning experiences in
+          engineering economy, operations management, and quantitative decision-making.
+        </p>
+        <ul class="list-compact">
+          <li>Instructor for <strong>Engineering Economy (QMBU301)</strong> at Koç University.</li>
+          <li>Teaching assistant for OPSM / MGIS courses and research methods.</li>
+          <li>Mentor for student research projects in analytics and sustainability.</li>
+        </ul>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: your.email@koc.edu.tr</p>
-      <p>
-        <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> ·
-        <a href="https://scholar.google.com" target="_blank">Google Scholar</a> ·
-        <a href="cv.pdf" target="_blank">CV (PDF)</a>
-      </p>
+        <p>
+          For teaching materials and course experience, visit the
+          <a href="teaching.html">Teaching</a> page.
+        </p>
+      </div>
     </section>
   </main>
 
   <footer>
-    &copy; <span id="year"></span> Fatemeh Zare Bidaki
+    &copy; <span id="year"></span> Fatemeh Zare Bidaki · Hosted on GitHub Pages
   </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+</div>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
+
