@@ -28,6 +28,9 @@
       </nav>
     </div>
   </header>
+  <div class="inline-gallery-overlay" id="inlineGalleryOverlay">
+  <img id="inlineGalleryImage" src="" alt="" />
+  </div>
 
   <main>
     <section>
@@ -104,5 +107,22 @@
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+  <script>
+  // Inline gallery zoom effect
+  document.querySelectorAll('.inline-gallery img').forEach(img => {
+    img.addEventListener('click', () => {
+      const overlay = document.getElementById('inlineGalleryOverlay');
+      const overlayImg = document.getElementById('inlineGalleryImage');
+
+      overlayImg.src = img.getAttribute('data-full') || img.src;
+      overlay.classList.add('visible');
+    });
+  });
+
+  document.getElementById('inlineGalleryOverlay').addEventListener('click', () => {
+    document.getElementById('inlineGalleryOverlay').classList.remove('visible');
+  });
+</script>
+
 </body>
 </html>
