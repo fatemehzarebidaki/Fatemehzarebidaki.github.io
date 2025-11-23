@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Research | Fatemeh Zare Bidaki</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+<div class="site-wrapper">
+  <header>
+    <div class="header-inner">
+      <div class="brand">
+        <div>
+          <div class="brand-title">Fatemeh Zare Bidaki</div>
+          <div class="brand-subtitle">
+            Online Optimization · EMS & Humanitarian Logistics
+          </div>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="research.html" class="active">Research</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="publications.html">Publications</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h1>Research</h1>
+      <p>
+        My research lies at the intersection of online optimization, Bayesian learning,
+        emergency medical services, and humanitarian logistics. I am particularly interested in
+        decision-making under uncertainty for time-critical, high-stakes environments.
+      </p>
+    </section>
+
+    <section>
+      <h2>Dissertation</h2>
+      <div class="highlight-box">
+        <p>
+          <strong>Title:</strong> Online Optimization of Ambulance Dispatching in Mass Casualty Incidents with Bayesian Updates
+        </p>
+        <p>
+          <strong>Summary:</strong> I develop offline and online models for casualty transportation,
+          integrating rolling-horizon optimization, Bayesian estimation of victim types, and
+          heuristic/metaheuristic methods (GRASP, VNS). The goal is to improve survival outcomes
+          and system robustness under uncertain and evolving conditions.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Current Research Themes</h2>
+      <ul class="list-compact">
+        <li>
+          <strong>Online ambulance dispatching:</strong>
+          Rolling-horizon MILP models with adaptive Bayesian updates of demand and victim type proportions.
+        </li>
+        <li>
+          <strong>EMS system dynamics & simulation:</strong>
+          Modeling survival dynamics, hospital capacity, and feedback effects in mass-casualty incidents.
+        </li>
+        <li>
+          <strong>Fairness in humanitarian logistics:</strong>
+          Distributional equity metrics for relief allocation, integrating Gini-based and other fairness measures.
+        </li>
+        <li>
+          <strong>Hybrid optimization–simulation frameworks:</strong>
+          Combining exact models, heuristics, and simulation for policy evaluation and decision support.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Selected Projects</h2>
+
+      <div class="highlight-box">
+        <h3>Rolling-Horizon Ambulance Dispatch with Bayesian Updates</h3>
+        <p>
+          Development of a dynamic dispatch model that updates victim type proportions using Bayesian learning,
+          solved via MILP and GRASP/VNS-based heuristics. The model is evaluated under varying forecast accuracy
+          and incident scenarios.
+        </p>
+        <!-- Optional: GitHub link
+        <p><a href="https://github.com/yourusername/your-repo" target="_blank">View code on GitHub</a></p>
+        -->
+      </div>
+
+      <div class="highlight-box">
+        <h3>System Dynamics Model for EMS in Disaster Settings</h3>
+        <p>
+          A system dynamics simulation integrating ambulance operations, hospital triage, survival curves,
+          and learning-based estimation of victim composition, enabling scenario analysis and policy testing.
+        </p>
+      </div>
+
+      <div class="highlight-box">
+        <h3>Online Relief Distribution with Blocked Edges</h3>
+        <p>
+          Conceptually related to online post-disaster distribution problems with uncertain road availability,
+          extension toward casualty transport and hospital access under disruption.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Fatemeh Zare Bidaki
+  </footer>
+</div>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
